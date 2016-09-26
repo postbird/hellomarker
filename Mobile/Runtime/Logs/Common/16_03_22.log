@@ -1,0 +1,12 @@
+[ 2016-03-22T02:08:32+08:00 ] 192.168.1.102 /hellomarker/mobile.php/Work/newWork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+ERR: 无法加载模块:Work
+
+[ 2016-03-22T02:09:08+08:00 ] 192.168.1.102 /hellomarker/mobile.php/Work/newWork/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+ERR: 无法加载模块:Work
+

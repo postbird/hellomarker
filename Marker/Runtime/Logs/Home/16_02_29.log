@@ -1,0 +1,1431 @@
+[ 2016-02-29T09:08:34+08:00 ] ::1 /hellomarker/marker.php/Home/User/userSignForm/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [8] Undefined index: username K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 60 行.
+NOTIC: [8] Undefined index: userpassword K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: userpassword2 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: useremail K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 63 行.
+NOTIC: [8] Undefined index: signverify K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Undefined variable: signSuccessFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\b474e2f24162edc49d276a2e54d69f0a.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020827s ]
+
+[ 2016-02-29T09:08:34+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.055949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.056047s ]
+
+[ 2016-02-29T09:10:08+08:00 ] ::1 /hellomarker/marker.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0539s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0003s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-02-29T09:10:11+08:00 ] ::1 /hellomarker/marker.php/Home/User/userLogout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-02-29T09:10:11+08:00 ] ::1 /hellomarker/marker.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0008s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0004s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-02-29T09:10:19+08:00 ] ::1 /hellomarker/marker.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: loginErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\57c7e03e65e87150888c90c5f20d020b.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-02-29T09:10:19+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2016-02-29T09:10:38+08:00 ] ::1 /hellomarker/marker.php/Home/User/userLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SELECT username,userid,usernickname,userpassword FROM mk_user WHERE username = 'ptbird' AND useractive=1; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-02-29T09:10:38+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-02-29T09:10:49+08:00 ] ::1 /hellomarker/marker.php/Home/User/userLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index: userremember K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 17 行.
+SQL: SELECT username,userid,usernickname,userpassword FROM mk_user WHERE username = 'ptbird' AND useractive=1; [ RunTime:0.0004s ]
+
+[ 2016-02-29T09:10:49+08:00 ] ::1 /hellomarker/marker.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0007s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0004s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-02-29T09:10:52+08:00 ] ::1 /hellomarker/marker.php/Home/User/myChange/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SELECT * FROM mk_user WHERE username='ptbird'; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\2a6a13c27a7cc828e50dfdff97970a62.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-02-29T09:10:56+08:00 ] ::1 /hellomarker/marker.php/Home/Index/myNote/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SELECT username,userid,useractive FROM mk_user WHERE username='ptbird'; [ RunTime:0.0004s ]
+SQL: SELECT noteid FROM mk_note WHERE  userid=1; [ RunTime:0.0004s ]
+SQL: SELECT mk_note.* FROM mk_note WHERE mk_note.userid=1 ORDER BY mk_note.noteid DESC LIMIT 0,5 ; [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: myErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\fa853d5218c49a5cc7d35784cd850ef6.php 第 89 行.
+NOTIC: [8] Undefined variable: myErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\fa853d5218c49a5cc7d35784cd850ef6.php 第 90 行.
+NOTIC: [8] Undefined variable: myErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\fa853d5218c49a5cc7d35784cd850ef6.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-02-29T09:11:01+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/15/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=15 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=1 AND noteid=15; [ RunTime:0.0416s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=15 [ RunTime:0.0254s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=15 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0024s ]
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=15; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-02-29T09:11:02+08:00 ] ::1 /hellomarker/marker.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0006s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0002s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-02-29T10:54:58+08:00 ] ::1 /hellomarker/marker.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0009s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0003s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2016-02-29T10:55:04+08:00 ] ::1 /hellomarker/marker.php/Home/Index/markerShare/sid/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] Undefined index: shareType K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 33 行.
+SQL: SELECT count(mk_note.isshare)  from mk_note WHERE mk_note.isshare = 1; [ RunTime:0.0004s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notetime,mk_note.isshare,mk_note.notediscusscount,mk_note.userid,mk_user.userid,mk_user.usernickname,mk_user.userlogo ,mk_note_share.sharetime,mk_note_share.noteid from mk_note,mk_user,mk_note_share WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid  AND mk_note_share.noteid=mk_note.noteid ORDER BY mk_note.noteid DESC LIMIT 0,5 ; [ RunTime:0.0298s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=16 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0004s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=15 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 76 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=14 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0003s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=13 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 76 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=6 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 76 行.
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,4; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-02-29T10:55:06+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0437s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-02-29T10:56:34+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0005s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0041s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-02-29T10:56:43+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0005s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0004s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-02-29T10:57:22+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0005s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0003s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-02-29T10:57:23+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0006s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-02-29T10:58:02+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2016-02-29T10:58:03+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0026s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-02-29T10:58:08+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0029s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-02-29T10:58:19+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-02-29T10:59:22+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0034s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-02-29T10:59:24+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-02-29T10:59:24+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0026s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-02-29T10:59:25+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0003s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-02-29T10:59:25+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0029s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-02-29T11:01:06+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2016-02-29T11:01:35+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0026s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-02-29T11:01:36+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-02-29T11:01:43+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0005s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0003s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-02-29T11:01:44+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-02-29T11:01:45+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-02-29T11:01:48+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0029s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-02-29T11:02:02+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-02-29T11:02:03+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0027s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-02-29T11:02:08+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0010s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0005s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0062s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002041s ]
+
+[ 2016-02-29T11:02:40+08:00 ] ::1 /hellomarker/marker.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: loginErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\57c7e03e65e87150888c90c5f20d020b.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-02-29T11:02:40+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-02-29T11:02:43+08:00 ] ::1 /hellomarker/marker.php/Home/User/userLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+NOTIC: [8] Undefined index: userremember K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+
+[ 2016-02-29T11:02:43+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-02-29T11:02:46+08:00 ] ::1 /hellomarker/marker.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: loginErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\57c7e03e65e87150888c90c5f20d020b.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-02-29T11:02:46+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2016-02-29T11:02:47+08:00 ] ::1 /hellomarker/marker.php/Home/User/userSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: signErrorValue K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\b474e2f24162edc49d276a2e54d69f0a.php 第 89 行.
+NOTIC: [8] Undefined variable: signErrorValue K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\b474e2f24162edc49d276a2e54d69f0a.php 第 93 行.
+NOTIC: [8] Undefined variable: signErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\b474e2f24162edc49d276a2e54d69f0a.php 第 118 行.
+NOTIC: [8] Undefined variable: signSuccessFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\b474e2f24162edc49d276a2e54d69f0a.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-02-29T11:02:47+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-02-29T11:02:48+08:00 ] ::1 /hellomarker/marker.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0006s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0003s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-02-29T11:02:50+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteShareInfo/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=16 AND mk_user.userid=mk_note.userid; [ RunTime:0.0004s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=16; [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: noteFlag K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 139 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=16 [ RunTime:0.0002s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=16 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,5 ; [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0028s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=28 AND userid=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=27 AND userid=0 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=16; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: notediscusscount K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\35c12cb5bcdc38811cba6adec178e562.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-02-29T11:02:52+08:00 ] ::1 /hellomarker/marker.php/Home/Index/noteCollectWork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2016-02-29T11:02:52+08:00 ] ::1 /hellomarker/marker.php/Home/User/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo K:\work\xampp\htdocs\hellomarker\Marker\Home\Controller\UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: loginErrorFlag K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\57c7e03e65e87150888c90c5f20d020b.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2016-02-29T11:02:52+08:00 ] ::1 /hellomarker/marker.php/Home/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2016-02-29T11:02:58+08:00 ] ::1 /hellomarker/marker.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0006s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0003s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+NOTIC: [8] Undefined variable: newShare K:\work\xampp\htdocs\hellomarker\Marker\Runtime\Cache\Home\e6a812fcee6e2c2b0c952db21bc1a05c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+

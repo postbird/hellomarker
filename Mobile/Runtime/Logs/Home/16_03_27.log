@@ -1,0 +1,120 @@
+[ 2016-03-27T16:19:59+08:00 ] 180.153.214.176 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0021s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0016s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0049s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-03-27T16:19:59+08:00 ] 117.184.96.86 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0010s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0009s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0010s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-03-27T16:58:34+08:00 ] 183.3.234.50 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0013s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0014s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0013s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-03-27T16:58:48+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0009s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0008s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0007s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-03-27T16:58:53+08:00 ] 183.3.234.50 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0010s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0010s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0008s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+

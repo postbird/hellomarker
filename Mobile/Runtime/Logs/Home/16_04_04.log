@@ -1,0 +1,298 @@
+[ 2016-04-04T03:27:54+08:00 ] 183.192.94.101 /hellomarkertest/mobile.php/Home/Work/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SELECT * FROM mk_work WHERE userid = 1 AND worktime=1459699200 ORDER BY worklevel desc; [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: date /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/WorkController.class.php 第 55 行.
+SQL: SELECT worktime,GROUP_CONCAT(workname),GROUP_CONCAT(workid),GROUP_CONCAT(workother),GROUP_CONCAT(worklevel) FROM mk_work WHERE userid = 1 AND worktime<1459699200  GROUP BY worktime ORDER BY worktime ASC , worklevel desc; [ RunTime:0.0014s ]
+SQL: SELECT worktime,GROUP_CONCAT(workname),GROUP_CONCAT(workid),GROUP_CONCAT(workother),GROUP_CONCAT(worklevel) FROM mk_work WHERE userid = 1 AND worktime>=1459699200  GROUP BY worktime ORDER BY worktime ASC , worklevel desc; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/992c1e30d033df3179a1b18b5161aef7.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2016-04-04T03:40:53+08:00 ] 183.192.94.101 /hellomarkertest/mobile.php/Home/Weather/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 68 行.
+NOTIC: [8] Undefined index: text /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 75 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-04-04T14:01:14+08:00 ] 140.206.97.24 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0014s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0019s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0024s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined offset: 2 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/0a5fa87ae321438159a5bb13b646fdcb.php 第 38 行.
+NOTIC: [8] Undefined offset: 2 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/0a5fa87ae321438159a5bb13b646fdcb.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2016-04-04T14:11:13+08:00 ] 117.136.8.76 /hellomarkertest/mobile.php/Home/User/userHome/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SELECT * FROM mk_user WHERE username='ptbird'; [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-04-04T14:11:15+08:00 ] 117.136.8.76 /hellomarkertest/mobile.php/Home/Work/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SELECT * FROM mk_work WHERE userid = 1 AND worktime=1459699200 ORDER BY worklevel desc; [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: date /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/WorkController.class.php 第 55 行.
+SQL: SELECT worktime,GROUP_CONCAT(workname),GROUP_CONCAT(workid),GROUP_CONCAT(workother),GROUP_CONCAT(worklevel) FROM mk_work WHERE userid = 1 AND worktime<1459699200  GROUP BY worktime ORDER BY worktime ASC , worklevel desc; [ RunTime:0.0014s ]
+SQL: SELECT worktime,GROUP_CONCAT(workname),GROUP_CONCAT(workid),GROUP_CONCAT(workother),GROUP_CONCAT(worklevel) FROM mk_work WHERE userid = 1 AND worktime>=1459699200  GROUP BY worktime ORDER BY worktime ASC , worklevel desc; [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/992c1e30d033df3179a1b18b5161aef7.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-04-04T14:11:21+08:00 ] 117.136.8.76 /hellomarkertest/mobile.php/Home/Weather/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 68 行.
+NOTIC: [8] Undefined index: text /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 75 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-04-04T16:38:15+08:00 ] 140.206.97.24 /hellomarkertest/mobile.php/Home/Work/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SELECT * FROM mk_work WHERE userid = 1 AND worktime=1459699200 ORDER BY worklevel desc; [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: date /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/WorkController.class.php 第 55 行.
+SQL: SELECT worktime,GROUP_CONCAT(workname),GROUP_CONCAT(workid),GROUP_CONCAT(workother),GROUP_CONCAT(worklevel) FROM mk_work WHERE userid = 1 AND worktime<1459699200  GROUP BY worktime ORDER BY worktime ASC , worklevel desc; [ RunTime:0.0013s ]
+SQL: SELECT worktime,GROUP_CONCAT(workname),GROUP_CONCAT(workid),GROUP_CONCAT(workother),GROUP_CONCAT(worklevel) FROM mk_work WHERE userid = 1 AND worktime>=1459699200  GROUP BY worktime ORDER BY worktime ASC , worklevel desc; [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/992c1e30d033df3179a1b18b5161aef7.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-04-04T16:38:18+08:00 ] 140.206.97.24 /hellomarkertest/mobile.php/Home/Weather/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: myChangeErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 68 行.
+NOTIC: [8] Undefined index: text /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 75 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+NOTIC: [8] Undefined index: cond['txt_d'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 184 行.
+NOTIC: [8] Undefined index: cond['txt_n'] /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/ddfecca5e7e70e4072684c5a3679d8c2.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2016-04-04T16:38:37+08:00 ] 140.206.97.24 /hellomarkertest/mobile.php/Home/User/userHome/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SELECT * FROM mk_user WHERE username='ptbird'; [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2016-04-04T16:38:39+08:00 ] 140.206.97.24 /hellomarkertest/mobile.php/Home/Index/myHome/user/ptbird/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SELECT * FROM mk_user WHERE username='ptbird'; [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-04-04T21:40:19+08:00 ] 140.206.97.24 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0014s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0020s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0015s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined offset: 2 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/0a5fa87ae321438159a5bb13b646fdcb.php 第 38 行.
+NOTIC: [8] Undefined offset: 2 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/0a5fa87ae321438159a5bb13b646fdcb.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+

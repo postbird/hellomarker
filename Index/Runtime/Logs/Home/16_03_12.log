@@ -1,0 +1,22 @@
+[ 2016-03-12T20:40:40+08:00 ] ::1 /hellomarker/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.048012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016377s ]
+
+[ 2016-03-12T23:24:26+08:00 ] ::1 /hellomarker/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016595s ]
+

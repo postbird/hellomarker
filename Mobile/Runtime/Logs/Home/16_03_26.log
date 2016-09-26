@@ -1,0 +1,1092 @@
+[ 2016-03-26T01:59:29+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0016s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0015s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0022s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2016-03-26T01:59:36+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php/Home/Index/noteShareInfo/id/179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=179 AND mk_user.userid=mk_note.userid; [ RunTime:0.0015s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=179; [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: noteFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 144 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=179 [ RunTime:0.0012s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=179 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,10000 ; [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0017s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=37 AND userid=0 [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 185 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=179; [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-03-26T01:59:40+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php/Home/Index/userHome/user/ptbird/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SELECT * FROM mk_user WHERE username='ptbird'; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: myFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 371 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-03-26T01:59:41+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0008s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0007s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0007s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-03-26T01:59:42+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php/Home/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SELECT * FROM mk_article ORDER BY articleTop DESC,articleid DESC [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-03-26T01:59:43+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php/Home/User/userHome/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SELECT * FROM mk_user WHERE username='0'; [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-03-26T01:59:43+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php/Home/User/userHome/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SELECT * FROM mk_user WHERE username='0'; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-03-26T01:59:43+08:00 ] 183.232.175.3 /hellomarkertest/mobile.php/Home/User/userHome/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SELECT * FROM mk_user WHERE username='0'; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2016-03-26T01:59:56+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/Index/noteShareInfo/id/179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=179 AND mk_user.userid=mk_note.userid; [ RunTime:0.0010s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=179; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: noteFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 144 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=179 [ RunTime:0.0008s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=179 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,10000 ; [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0017s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=37 AND userid=0 [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 185 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=179; [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-03-26T01:59:56+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/Index/noteShareInfo/id/179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=179 AND mk_user.userid=mk_note.userid; [ RunTime:0.0009s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=179; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: noteFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 144 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=179 [ RunTime:0.0008s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=179 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,10000 ; [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0013s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=37 AND userid=0 [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 185 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=179; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2016-03-26T01:59:56+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/Index/noteShareInfo/id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SELECT mk_note.*,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.noteid=180 AND mk_user.userid=mk_note.userid; [ RunTime:0.0011s ]
+SQL: SELECT * FROM mk_note_collect WHERE userid=0 AND noteid=180; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: noteFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 144 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE noteid=180 [ RunTime:0.0009s ]
+SQL: SELECT mk_note_discuss.*,mk_user.userid,mk_user.usernickname,mk_user.userlogo from mk_note_discuss,mk_user WHERE mk_note_discuss.noteid=180 AND mk_user.userid=mk_note_discuss.userid ORDER BY mk_note_discuss.discussid DESC LIMIT 0,10000 ; [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_note_discuss_like` [ RunTime:0.0013s ]
+SQL: SELECT discusslikeid,islike FROM mk_note_discuss_like WHERE discussid=44 AND userid=0 [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 185 行.
+SQL: SELECT discussid FROM mk_note_discuss WHERE isdelete=0 AND noteid=180; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: notediscusscount /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/fc27917300b6f7020d914fc113f5b8ac.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-03-26T01:59:58+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/Index/userHome/user/ptbird/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SELECT * FROM mk_user WHERE username='ptbird'; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: myFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 371 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-03-26T01:59:58+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SELECT articleid,articlename,articleimg,articletime,articlebanner FROM mk_article ORDER BY articletop desc , articleid desc LIMIT 0,4 [ RunTime:0.0010s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.notediscusscount,mk_user.userid,mk_note.isshare,mk_note.imagesrc,mk_user.userid,mk_user.usernickname from mk_note,mk_user WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid ORDER BY noteid DESC limit 0,4; [ RunTime:0.0010s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notediscusscount from mk_note WHERE mk_note.isshare=1 ORDER BY notediscusscount DESC LIMIT 0,4; [ RunTime:0.0009s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,3; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2016-03-26T01:59:58+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: loginErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/d1ab5416fdc61b334de461083aa993bd.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-03-26T01:59:59+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/User/userHome/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SELECT * FROM mk_user WHERE username='0'; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2016-03-26T02:00:00+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: loginErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/d1ab5416fdc61b334de461083aa993bd.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-03-26T02:00:00+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 8 行.
+NOTIC: [8] Undefined variable: userInfo /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/UserController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: loginErrorFlag /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Runtime/Cache/Home/d1ab5416fdc61b334de461083aa993bd.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2016-03-26T02:00:00+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/Index/markerShare/sid/all/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+NOTIC: [8] Undefined index: shareType /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 38 行.
+SQL: SELECT count(mk_note.isshare)  from mk_note WHERE mk_note.isshare = 1; [ RunTime:0.0013s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.imagesrc,mk_note.notetime,mk_note.isshare,mk_note.notediscusscount,mk_note.userid,mk_user.userid,mk_user.usernickname,mk_user.userlogo ,mk_note_share.sharetime,mk_note_share.noteid from mk_note,mk_user,mk_note_share WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid  AND mk_note_share.noteid=mk_note.noteid ORDER BY mk_note.noteid DESC  [ RunTime:0.0048s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=181 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=180 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=179 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=178 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=177 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=176 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=175 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=174 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=173 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=172 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=171 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=170 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=169 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=168 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=167 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=166 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=165 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=164 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=163 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=162 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=161 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=160 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=159 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=158 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=157 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=156 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=155 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=154 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=153 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=152 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=151 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=150 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=149 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=148 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=147 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=146 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=145 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=143 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=142 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=141 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=140 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=139 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=138 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=137 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=135 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=134 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=133 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=132 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=131 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=130 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=129 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=128 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=127 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=126 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=125 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=124 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=123 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=122 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=121 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=120 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=119 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=118 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=117 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=116 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=114 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=113 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=112 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=111 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=110 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=109 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=108 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=107 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=106 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=105 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=104 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=103 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=102 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=101 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=100 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=99 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=98 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=97 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=96 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=95 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=94 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=93 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=92 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=91 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=90 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=89 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=88 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=87 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=86 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=85 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=84 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=83 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=82 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=80 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=79 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=78 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=77 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=76 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=75 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=74 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=73 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0014s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=72 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=71 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=70 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=69 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=68 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=67 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=66 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=65 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=64 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=63 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=62 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=61 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=59 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=58 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=57 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=56 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=55 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=54 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=53 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=52 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=51 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=50 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=49 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=48 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=47 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=46 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=45 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=44 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=43 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=42 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=41 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=40 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=39 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=38 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=37 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=36 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=35 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=34 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=33 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=32 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=31 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=30 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=29 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=28 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=27 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=26 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=25 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=24 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=23 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=22 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=21 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=20 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=19 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=18 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=17 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,4; [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-03-26T02:00:01+08:00 ] 183.232.175.5 /hellomarkertest/mobile.php/Home/Index/markerShare/sid/all/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+NOTIC: [8] Undefined index: shareType /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 38 行.
+SQL: SELECT count(mk_note.isshare)  from mk_note WHERE mk_note.isshare = 1; [ RunTime:0.0009s ]
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.imagesrc,mk_note.notetime,mk_note.isshare,mk_note.notediscusscount,mk_note.userid,mk_user.userid,mk_user.usernickname,mk_user.userlogo ,mk_note_share.sharetime,mk_note_share.noteid from mk_note,mk_user,mk_note_share WHERE mk_note.isshare=1 AND mk_note.userid=mk_user.userid  AND mk_note_share.noteid=mk_note.noteid ORDER BY mk_note.noteid DESC  [ RunTime:0.0031s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=181 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=180 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=179 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=178 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=177 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=176 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=175 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=174 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=173 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=172 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=171 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=170 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=169 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=168 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=167 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=166 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=165 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=164 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=163 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=162 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=161 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=160 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=159 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=158 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=157 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=156 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=155 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=154 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=153 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=152 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=151 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=150 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=149 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=148 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=147 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=146 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=145 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=143 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=142 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=141 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=140 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=139 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=138 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=137 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=135 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=134 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=133 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=132 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=131 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=130 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=129 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=128 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=127 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=126 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=125 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=124 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=123 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=122 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=121 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=120 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=119 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=118 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=117 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=116 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=114 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=113 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=112 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=111 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=110 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=109 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=108 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=107 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=106 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=105 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=104 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=103 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=102 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=101 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=100 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=99 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=98 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=97 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=96 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=95 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=94 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=93 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=92 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=91 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=90 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=89 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=88 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=87 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=86 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=85 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=84 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0033s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=83 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=82 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=80 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=79 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=78 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=77 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=76 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=75 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=74 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=73 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=72 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=71 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=70 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=69 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=68 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=67 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=66 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0027s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=65 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=64 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=63 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=62 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=61 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=59 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=58 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=57 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=56 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=55 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=54 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=53 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=52 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=51 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=50 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=49 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=48 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=47 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=46 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=45 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=44 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=43 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=42 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=41 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=40 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=39 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=38 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=37 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=36 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=35 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=34 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=33 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=32 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=31 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=30 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=29 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=28 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=27 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=26 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=25 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=24 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=23 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=22 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=21 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=20 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=19 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=18 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_user.username AS discussname,mk_note_discuss.discusstime FROM mk_note_discuss,mk_user WHERE mk_note_discuss.userid=mk_user.userid AND mk_note_discuss.noteid=17 ORDER BY mk_note_discuss.discussid LIMIT 0,1; [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 /data/home/qxu1152030011/htdocs/hellomarkertest/Mobile/Home/Controller/IndexController.class.php 第 81 行.
+SQL: SELECT mk_note.noteid,mk_note.notename,mk_note.isshare,mk_note.notecollectcount from mk_note WHERE mk_note.isshare=1 ORDER BY notecollectcount DESC LIMIT 0,4; [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
